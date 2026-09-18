@@ -1,0 +1,20 @@
+version = 1
+revision = 3
+requires-python = ">=3.13"
+
+[[package]]
+name = "humre"
+version = "1.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/10/eb/8189421df8b7eded688409bfd5561964abaed60dd4e49c5505fe24eb6fa2/Humre-1.0.0.tar.gz", hash = "sha256:469ae0831969e01726049dc463cdba23a571c8d9fa0ecee49ac2d36f5a3290fa", size = 26453, upload-time = "2023-06-18T01:52:12.431Z" }
+
+[[package]]
+name = "nato-encoder-decoder"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "humre" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "humre", specifier = ">=1.0.0" }]
